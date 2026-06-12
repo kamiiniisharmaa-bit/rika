@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>STANCES — Privacy Policy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #faf8f5;
+            color: #1e2a2e;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header identical to main site */
+        .site-header {
+            background: #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(2px);
+            background: rgba(255, 255, 255, 0.96);
+        }
+
+        .header-inner {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: space-between;
+            padding: 1rem 0;
+        }
+
+        .logo-area h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            background: linear-gradient(135deg, #2c5f4c, #b8703c);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .logo-area p {
+            font-size: 0.75rem;
+            color: #6c7a6e;
+            letter-spacing: 0.3px;
+        }
+
+        .nav-menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #2d3e3b;
+            font-size: 1rem;
+            transition: 0.2s;
+            padding-bottom: 4px;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav-menu a:hover {
+            border-bottom-color: #b8703c;
+            color: #b35f2a;
+        }
+
+        /* Privacy page styling */
+        .privacy-hero {
+            background: #f1ebe4;
+            border-radius: 2rem;
+            padding: 2.5rem 2rem;
+            margin: 2rem 0 2rem 0;
+            text-align: center;
+        }
+
+        .privacy-hero h1 {
+            font-size: 2.3rem;
+            font-weight: 600;
+            color: #2c4e41;
+            margin-bottom: 0.75rem;
+        }
+
+        .privacy-hero p {
+            max-width: 700px;
+            margin: 0 auto;
+            color: #4e645c;
+            font-size: 1rem;
+        }
+
+        .legal-card {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 2rem 2rem;
+            margin: 2rem 0 3rem;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+            border: 1px solid #e8dfd6;
+        }
+
+        .legal-card h2 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin: 1.8rem 0 1rem 0;
+            color: #2c5f4c;
+            border-left: 4px solid #b8703c;
+            padding-left: 1rem;
+        }
+
+        .legal-card h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .legal-card h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1.2rem 0 0.5rem 0;
+            color: #3c6b5a;
+        }
+
+        .legal-card p, .legal-card li {
+            color: #2c3e3a;
+            margin-bottom: 0.85rem;
+        }
+
+        .legal-card ul, .legal-card ol {
+            margin: 0.75rem 0 1rem 1.8rem;
+        }
+
+        .legal-card li {
+            margin-bottom: 0.4rem;
+        }
+
+        .highlight {
+            background: #f9f3ec;
+            padding: 0.2rem 0.4rem;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+
+        .contact-email {
+            background: #f4efe8;
+            padding: 1rem 1.2rem;
+            border-radius: 1rem;
+            margin: 1.5rem 0;
+            font-family: monospace;
+            font-size: 0.95rem;
+            text-align: center;
+        }
+
+        .last-updated {
+            font-size: 0.8rem;
+            color: #7c8c86;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e2d9d0;
+            text-align: right;
+        }
+
+        .site-footer {
+            background: #1e2e2a;
+            color: #d9d2c9;
+            margin-top: 2rem;
+            padding: 2rem 0;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 780px) {
+            .header-inner {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+            .nav-menu {
+                gap: 1.2rem;
+                justify-content: center;
+            }
+            .privacy-hero h1 {
+                font-size: 1.8rem;
+            }
+            .legal-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo-area">
+            <h1>STANCES</h1>
+            <p>timeless goods · handmade soul</p>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="privacy.html" style="border-bottom-color: #b8703c; color:#b35f2a;">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <div class="privacy-hero">
+            <h1>Privacy Policy</h1>
+            <p>Your trust is our greatest treasure. We are committed to protecting your personal information with the same care we give to handcrafted goods.</p>
+        </div>
+
+        <div class="legal-card">
+            <h2>1. Who We Are</h2>
+            <p>STANCES ("we", "us", "our") operates the website www.harborandhearth.com. We are a small, independent e-commerce shop dedicated to selling sustainable, artisan-made home goods. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or make a purchase.</p>
+
+            <h2>2. Information We Collect</h2>
+            <p>We collect personal information that you voluntarily provide to us when you:</p>
+            <ul>
+                <li><strong>Place an order:</strong> name, billing/shipping address, email address, phone number, and payment details (processed securely via our payment partners).</li>
+                <li><strong>Create an account:</strong> email address and password (encrypted).</li>
+                <li><strong>Subscribe to our newsletter:</strong> email address and preferences.</li>
+                <li><strong>Contact customer support:</strong> any information you choose to share (e.g., order number, product questions).</li>
+                <li><strong>Browse our website:</strong> automatically collected usage data via cookies (IP address, browser type, device information, pages visited).</li>
+            </ul>
+
+            <h2>3. How We Use Your Information</h2>
+            <p>We use your personal information solely for legitimate business purposes:</p>
+            <ul>
+                <li>Processing and fulfilling your orders (including shipping confirmations and tracking).</li>
+                <li>Communicating with you about your order, returns, or product inquiries.</li>
+                <li>Sending promotional emails, discounts, and artisan stories — only if you have opted in. You may unsubscribe at any time.</li>
+                <li>Improving our website, product selection, and customer experience through analytics.</li>
+                <li>Preventing fraud and maintaining the security of our store.</li>
+            </ul>
+
+            <h2>4. Sharing Your Information</h2>
+            <p>We never sell your personal data. We share your information only with trusted third parties necessary to operate our business:</p>
+            <ul>
+                <li><strong>Shipping carriers</strong> (USPS, FedEx, DHL) to deliver your order.</li>
+                <li><strong>Payment processors</strong> (Stripe, PayPal) — they handle payment data under strict PCI compliance.</li>
+                <li><strong>Email marketing platform</strong> (e.g., Klaviyo or Mailchimp) to manage newsletter subscriptions.</li>
+                <li><strong>E-commerce platform provider</strong> (hosting and database services).</li>
+                <li><strong>Legal obligations</strong> if required by law or to protect our rights.</li>
+            </ul>
+            <p>All third-party partners are contractually obligated to protect your data and use it only for the services they provide to us.</p>
+
+            <h2>5. Cookies & Tracking Technologies</h2>
+            <p>We use cookies and similar technologies to enhance your browsing experience, analyze site traffic, and remember your cart contents. You can control cookies through your browser settings. Disabling cookies may affect some functionality (e.g., cart persistence).</p>
+            <p><strong>Types of cookies we use:</strong></p>
+            <ul>
+                <li>Essential cookies (required for checkout and security).</li>
+                <li>Preference cookies (remember language or region).</li>
+                <li>Analytics cookies (Google Analytics to understand user behavior anonymously).</li>
+            </ul>
+
+            <h2>6. Data Retention</h2>
+            <p>We retain your personal information only as long as necessary to fulfill the purposes outlined in this policy, unless a longer retention period is required by law. Order records are kept for 7 years for tax and accounting purposes. Newsletter data is retained until you unsubscribe.</p>
+
+            <h2>7. Your Rights (GDPR & CCPA Compliance)</h2>
+            <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+            <ul>
+                <li><strong>Access:</strong> Request a copy of the personal information we hold about you.</li>
+                <li><strong>Correction:</strong> Update inaccurate or incomplete information.</li>
+                <li><strong>Deletion:</strong> Request that we delete your personal data (subject to legal obligations).</li>
+                <li><strong>Opt-out:</strong> Unsubscribe from marketing communications or disable non-essential cookies.</li>
+                <li><strong>Data Portability:</strong> Receive your data in a structured, machine-readable format.</li>
+            </ul>
+            <p>To exercise any of these rights, please contact us using the email below. We will respond within 30 days.</p>
+
+            <h2>8. Security Measures</h2>
+            <p>We implement industry-standard security measures, including SSL encryption for all transactions, restricted access to customer data, and regular security scans. However, no method of transmission over the Internet is 100% secure. While we strive to protect your data, we cannot guarantee absolute security.</p>
+
+            <h2>9. Children's Privacy</h2>
+            <p>Our website is not intended for children under 16 years of age. We do not knowingly collect personal information from minors. If you believe a child has provided us with data, please contact us, and we will delete it promptly.</p>
+
+            <h2>10. International Transfers</h2>
+            <p>STANCES operates from the United States. If you are accessing our site from outside the US, please be aware that your data may be transferred to, stored, and processed in the US, where data protection laws may differ from your country of residence. By using our services, you consent to this transfer.</p>
+
+            <h2>11. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. The revised version will be posted on this page with an updated "Last Revised" date. We encourage you to review this policy periodically.</p>
+
+            <div class="contact-email">
+                📧 For any privacy-related questions or requests, please email us at:<br>
+                <strong>privacy@harborandhearth.com</strong>  or  <strong>hello@harborandhearth.com</strong>
+            </div>
+
+            <div class="last-updated">
+                📅 Privacy Policy last updated: June 5, 2026
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>© 2025 STANCES — timeless goods, crafted with integrity.</p>
+        <p style="margin-top: 8px; font-size: 0.75rem;">🌿 Plastic-neutral shipping | Proud member of 1% for the Planet</p>
+    </div>
+</footer>
+
+</body>
+</html>
