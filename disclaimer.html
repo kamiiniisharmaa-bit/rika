@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>STANCES — Disclaimer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #faf8f5;
+            color: #1e2a2e;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header identical to main site */
+        .site-header {
+            background: #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(2px);
+            background: rgba(255, 255, 255, 0.96);
+        }
+
+        .header-inner {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: space-between;
+            padding: 1rem 0;
+        }
+
+        .logo-area h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            background: linear-gradient(135deg, #2c5f4c, #b8703c);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .logo-area p {
+            font-size: 0.75rem;
+            color: #6c7a6e;
+            letter-spacing: 0.3px;
+        }
+
+        .nav-menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #2d3e3b;
+            font-size: 1rem;
+            transition: 0.2s;
+            padding-bottom: 4px;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav-menu a:hover {
+            border-bottom-color: #b8703c;
+            color: #b35f2a;
+        }
+
+        /* Disclaimer page styling */
+        .disclaimer-hero {
+            background: #f1ebe4;
+            border-radius: 2rem;
+            padding: 2.5rem 2rem;
+            margin: 2rem 0 2rem 0;
+            text-align: center;
+        }
+
+        .disclaimer-hero h1 {
+            font-size: 2.3rem;
+            font-weight: 600;
+            color: #2c4e41;
+            margin-bottom: 0.75rem;
+        }
+
+        .disclaimer-hero p {
+            max-width: 700px;
+            margin: 0 auto;
+            color: #4e645c;
+            font-size: 1rem;
+        }
+
+        .legal-card {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 2rem 2rem;
+            margin: 2rem 0 3rem;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+            border: 1px solid #e8dfd6;
+        }
+
+        .legal-card h2 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin: 1.5rem 0 1rem 0;
+            color: #2c5f4c;
+            border-left: 4px solid #b8703c;
+            padding-left: 1rem;
+        }
+
+        .legal-card h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .legal-card h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1.2rem 0 0.5rem 0;
+            color: #3c6b5a;
+        }
+
+        .legal-card p, .legal-card li {
+            color: #2c3e3a;
+            margin-bottom: 0.85rem;
+        }
+
+        .legal-card ul {
+            margin: 0.75rem 0 1rem 1.8rem;
+        }
+
+        .legal-card li {
+            margin-bottom: 0.4rem;
+        }
+
+        .highlight {
+            background: #f9f3ec;
+            padding: 0.2rem 0.4rem;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+
+        .last-updated {
+            font-size: 0.8rem;
+            color: #7c8c86;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e2d9d0;
+            text-align: right;
+        }
+
+        .site-footer {
+            background: #1e2e2a;
+            color: #d9d2c9;
+            margin-top: 2rem;
+            padding: 2rem 0;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 780px) {
+            .header-inner {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+            .nav-menu {
+                gap: 1.2rem;
+                justify-content: center;
+            }
+            .disclaimer-hero h1 {
+                font-size: 1.8rem;
+            }
+            .legal-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo-area">
+            <h1>STANCES</h1>
+            <p>timeless goods · handmade soul</p>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="disclaimer.html" style="border-bottom-color: #b8703c; color:#b35f2a;">Disclaimer</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <div class="disclaimer-hero">
+            <h1>Disclaimer & Legal Notice</h1>
+            <p>Transparency is part of our craft. Please read this disclaimer carefully before using STANCES services, website, or products.</p>
+        </div>
+
+        <div class="legal-card">
+            <h2>General Information</h2>
+            <p>The information provided on the STANCES website (www.harborandhearth.com) and related pages is for general informational and educational purposes only. While we strive to keep product descriptions, care instructions, and details accurate, natural variations in handmade goods (color, grain, size) are to be expected and celebrated. <strong>We do not guarantee that every image exactly represents the final product</strong> due to screen resolution, lighting, or artisanal differences.</p>
+
+            <h2>Product Disclaimer</h2>
+            <p>All of our goods are crafted by independent artisans, small studios, or in limited batches. Therefore:</p>
+            <ul>
+                <li>Measurements and capacities listed are approximate (±5% variance).</li>
+                <li>Hand-thrown ceramics might show slight glaze irregularities — these are not defects but marks of authenticity.</li>
+                <li>Wooden items (cutting boards, spoons) may change color or develop small cracks over time if not oiled properly. We provide care guides, but final longevity depends on usage.</li>
+                <li>We strongly advise against using any product in a manner inconsistent with its intended use (e.g., microwaving metallic-accented ceramics).</li>
+            </ul>
+            <p>If you have specific allergies or material sensitivities, please reach out before purchasing — we are happy to share full material composition.</p>
+
+            <h2>External Links & Third-Party Content</h2>
+            <p>Our website may include links to external platforms (e.g., Instagram, artisan portfolios, payment processors). STANCES does not control, endorse, or assume responsibility for the content, privacy policies, or practices of any third-party sites. Visiting those links is at your own risk.</p>
+
+            <h2>Health & Safety Disclaimer</h2>
+            <p>Some of our products (candles, beeswax wraps, pottery) should be used with common sense safety measures. Never leave burning candles unattended, and keep out of reach of children. The statements regarding natural materials have not been evaluated by any food or drug administration. Our kitchenware is food-safe, but it remains the user's responsibility to ensure proper cleaning and maintenance.</p>
+
+            <h2>Limitation of Liability</h2>
+            <p>To the fullest extent permitted by law, STANCES and its owners, employees, or partners shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of your use of the website or products purchased. Our total liability for any claim related to a product shall not exceed the purchase price you paid for that item.</p>
+
+            <h2>Affiliate & Partnership Disclosure</h2>
+            <p>From time to time, STANCES may participate in affiliate marketing programs. If you click on an affiliate link and make a purchase, we may receive a small commission at no additional cost to you. However, we <span class="highlight">only recommend products or makers that align with our values of craftsmanship and sustainability</span>. Sponsored content will always be clearly marked as such.</p>
+
+            <h2>Errors & Omissions</h2>
+            <p>While we aim for perfection, human errors in pricing, product availability, or copy may occur. We reserve the right to correct any inaccuracies or cancel orders affected by material errors. If you notice a discrepancy, please contact us immediately at <strong>hello@harborandhearth.com</strong>.</p>
+
+            <h2>Jurisdiction</h2>
+            <p>This disclaimer and any disputes arising from your use of the website shall be governed by the laws of the State of Washington, without regard to conflict of law provisions. Any legal action must be filed in King County courts.</p>
+
+            <div class="last-updated">
+                📅 Disclaimer last updated: June 5, 2026
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>© 2025 STANCES — timeless goods, crafted with integrity.</p>
+        <p style="margin-top: 8px; font-size: 0.75rem;">🌿 Plastic-neutral shipping | Proud member of 1% for the Planet</p>
+    </div>
+</footer>
+
+</body>
+</html>
