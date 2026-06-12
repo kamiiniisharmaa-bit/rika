@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>STANCES — Our Story</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #faf8f5;
+            color: #1e2a2e;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header identical to index */
+        .site-header {
+            background: #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(2px);
+            background: rgba(255, 255, 255, 0.96);
+        }
+
+        .header-inner {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: space-between;
+            padding: 1rem 0;
+        }
+
+        .logo-area h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            background: linear-gradient(135deg, #2c5f4c, #b8703c);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .logo-area p {
+            font-size: 0.75rem;
+            color: #6c7a6e;
+            letter-spacing: 0.3px;
+        }
+
+        .nav-menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #2d3e3b;
+            font-size: 1rem;
+            transition: 0.2s;
+            padding-bottom: 4px;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav-menu a:hover {
+            border-bottom-color: #b8703c;
+            color: #b35f2a;
+        }
+
+        /* About hero */
+        .about-hero {
+            background: linear-gradient(115deg, #e0d6cc 0%, #f0e7de 100%);
+            border-radius: 2rem;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin: 2rem 0 2.5rem 0;
+        }
+
+        .about-hero h1 {
+            font-size: 2.6rem;
+            font-weight: 600;
+            color: #2c4e41;
+            letter-spacing: -0.01em;
+        }
+
+        .about-hero p {
+            font-size: 1.15rem;
+            max-width: 680px;
+            margin: 1rem auto 0;
+            color: #4b5f58;
+        }
+
+        /* content sections */
+        .story-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            margin: 3rem 0 4rem;
+            align-items: center;
+        }
+
+        .story-text {
+            flex: 2;
+            min-width: 260px;
+        }
+
+        .story-text h2 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            border-left: 5px solid #b8703c;
+            padding-left: 1rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .story-text p {
+            margin-bottom: 1.2rem;
+            color: #2f3e3a;
+        }
+
+        .story-img {
+            flex: 1.2;
+            border-radius: 1.8rem;
+            overflow: hidden;
+            box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.1);
+        }
+
+        .story-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        .values-section {
+            background: #f3ede7;
+            border-radius: 2rem;
+            padding: 2.5rem 2rem;
+            margin: 2rem 0 3rem;
+        }
+
+        .values-title {
+            text-align: center;
+            font-size: 1.9rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            color: #2b5545;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2rem;
+        }
+
+        .value-card {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .value-icon {
+            font-size: 2.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .value-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.6rem;
+            font-weight: 600;
+        }
+
+        .value-card p {
+            font-size: 0.9rem;
+            color: #4c625b;
+        }
+
+        .team-note {
+            text-align: center;
+            margin: 3rem 0 2rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 2rem;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.03);
+        }
+
+        .team-note h3 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .btn-shop {
+            display: inline-block;
+            background: #2c5f4c;
+            color: white;
+            padding: 0.8rem 1.8rem;
+            border-radius: 2rem;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: 0.2s;
+        }
+
+        .btn-shop:hover {
+            background: #1f4537;
+            transform: scale(0.97);
+        }
+
+        .site-footer {
+            background: #1e2e2a;
+            color: #d9d2c9;
+            margin-top: 3rem;
+            padding: 2rem 0;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 780px) {
+            .header-inner {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+            .nav-menu {
+                gap: 1.2rem;
+                justify-content: center;
+            }
+            .about-hero h1 {
+                font-size: 2rem;
+            }
+            .story-grid {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo-area">
+            <h1>STANCES</h1>
+            <p>timeless goods · handmade soul</p>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" style="border-bottom-color: #b8703c; color:#b35f2a;">About</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <div class="about-hero">
+            <h1>Rooted by the coast,<br> built with intention</h1>
+            <p>STANCES was born from a quiet rebellion against mass production — a belief that everyday objects should be cherished, not discarded.</p>
+        </div>
+
+        <div class="story-grid">
+            <div class="story-text">
+                <h2>Our story</h2>
+                <p>Founded in a small seaside town, STANCES began as a tiny workshop where we restored vintage kitchenware and carved wooden utensils. Over time, we collaborated with local potters, weavers, and ethical makers who shared our philosophy: slow, honest, and beautiful.</p>
+                <p>Today, we partner with artisan collectives across the globe — from linen weavers in Lithuania to ceramic studios in Portugal. Every piece is chosen for its durability, natural materials, and timeless feel. We're not just selling products; we're preserving skills that deserve to be celebrated.</p>
+                <p>Our name, <strong>STANCES</strong>, reflects the two anchors of a meaningful home: the welcoming harbor that connects us to the world, and the hearth that gathers family and friends. We invite you to explore our collection and make these objects part of your daily rituals.</p>
+            </div>
+            <div class="story-img">
+                <img src="https://images.pexels.com/photos/5722047/pexels-photo-5722047.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" 
+                     alt="Artisan pottery and linen workshop" loading="lazy">
+            </div>
+        </div>
+
+        <div class="values-section">
+            <div class="values-title">What we stand for</div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">🌿</div>
+                    <h3>Mindful Materials</h3>
+                    <p>Organic cotton, reclaimed wood, non-toxic glazes — no shortcuts, no greenwashing.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h3>Fair & Direct</h3>
+                    <p>We work directly with craftspeople, ensuring fair wages and long-term partnerships.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🌊</div>
+                    <h3>Coastline Care</h3>
+                    <p>1% of every sale supports ocean cleanup & coastal habitat restoration.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🕰️</div>
+                    <h3>Built to Last</h3>
+                    <p>Generous warranties and repair guides — because the most sustainable item is the one you keep forever.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-note">
+            <h3>From our family to yours</h3>
+            <p style="max-width: 600px; margin: 0 auto;">We’re a small team of designers, curators, and story-lovers based in the Pacific Northwest. Every order is packed by hand using recycled materials, and we answer every email personally. Thank you for being part of this journey.</p>
+            <a href="index.html" class="btn-shop">→ Explore the collection</a>
+        </div>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>© 2025 STANCES — timeless goods, crafted with integrity.</p>
+        <p style="margin-top: 8px; font-size: 0.75rem;">🌿 Plastic-neutral shipping | Proud member of 1% for the Planet</p>
+    </div>
+</footer>
+
+</body>
+</html>
