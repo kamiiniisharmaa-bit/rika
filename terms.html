@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>STANCES — Terms & Conditions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #faf8f5;
+            color: #1e2a2e;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header identical to main site */
+        .site-header {
+            background: #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(2px);
+            background: rgba(255, 255, 255, 0.96);
+        }
+
+        .header-inner {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: space-between;
+            padding: 1rem 0;
+        }
+
+        .logo-area h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            background: linear-gradient(135deg, #2c5f4c, #b8703c);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .logo-area p {
+            font-size: 0.75rem;
+            color: #6c7a6e;
+            letter-spacing: 0.3px;
+        }
+
+        .nav-menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #2d3e3b;
+            font-size: 1rem;
+            transition: 0.2s;
+            padding-bottom: 4px;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav-menu a:hover {
+            border-bottom-color: #b8703c;
+            color: #b35f2a;
+        }
+
+        /* Terms page styling */
+        .terms-hero {
+            background: #f1ebe4;
+            border-radius: 2rem;
+            padding: 2.5rem 2rem;
+            margin: 2rem 0 2rem 0;
+            text-align: center;
+        }
+
+        .terms-hero h1 {
+            font-size: 2.3rem;
+            font-weight: 600;
+            color: #2c4e41;
+            margin-bottom: 0.75rem;
+        }
+
+        .terms-hero p {
+            max-width: 700px;
+            margin: 0 auto;
+            color: #4e645c;
+            font-size: 1rem;
+        }
+
+        .legal-card {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 2rem 2rem;
+            margin: 2rem 0 3rem;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+            border: 1px solid #e8dfd6;
+        }
+
+        .legal-card h2 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin: 1.8rem 0 1rem 0;
+            color: #2c5f4c;
+            border-left: 4px solid #b8703c;
+            padding-left: 1rem;
+        }
+
+        .legal-card h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .legal-card h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1.2rem 0 0.5rem 0;
+            color: #3c6b5a;
+        }
+
+        .legal-card p, .legal-card li {
+            color: #2c3e3a;
+            margin-bottom: 0.85rem;
+        }
+
+        .legal-card ul, .legal-card ol {
+            margin: 0.75rem 0 1rem 1.8rem;
+        }
+
+        .legal-card li {
+            margin-bottom: 0.4rem;
+        }
+
+        .highlight {
+            background: #f9f3ec;
+            padding: 0.2rem 0.4rem;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+
+        .contact-box {
+            background: #f4efe8;
+            padding: 1rem 1.2rem;
+            border-radius: 1rem;
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+
+        .last-updated {
+            font-size: 0.8rem;
+            color: #7c8c86;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e2d9d0;
+            text-align: right;
+        }
+
+        .site-footer {
+            background: #1e2e2a;
+            color: #d9d2c9;
+            margin-top: 2rem;
+            padding: 2rem 0;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 780px) {
+            .header-inner {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+            .nav-menu {
+                gap: 1.2rem;
+                justify-content: center;
+            }
+            .terms-hero h1 {
+                font-size: 1.8rem;
+            }
+            .legal-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo-area">
+            <h1>STANCES</h1>
+            <p>timeless goods · handmade soul</p>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html" style="border-bottom-color: #b8703c; color:#b35f2a;">Terms</a></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <div class="terms-hero">
+            <h1>Terms & Conditions</h1>
+            <p>These terms govern your use of STANCES website and purchases. By shopping with us, you agree to this agreement.</p>
+        </div>
+
+        <div class="legal-card">
+            <h2>1. Overview & Acceptance</h2>
+            <p>Welcome to STANCES ("Company", "we", "us", "our"). These Terms and Conditions ("Terms") apply to your access and use of www.harborandhearth.com (the "Site"), including any purchases, browsing, or interactions. By using the Site or placing an order, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree, please do not use our Site.</p>
+
+            <h2>2. Eligibility</h2>
+            <p>By using our Site, you represent that you are at least 18 years old or are accessing the Site under the supervision of a parent or legal guardian. You also agree to provide accurate, current, and complete information during checkout and account registration.</p>
+
+            <h2>3. Products & Pricing</h2>
+            <p><strong>Artisana Variation:</strong> Many of our products are handmade or produced in small batches. Slight variations in color, size, grain, or texture are natural and contribute to the uniqueness of each item. These variations do not constitute defects.</p>
+            <p><strong>Pricing:</strong> All prices are listed in USD ($) and are subject to change without notice. We make every effort to ensure accurate pricing, but errors may occur. If a product is listed at an incorrect price due to a typographical error, we reserve the right to cancel or refuse any orders placed at the incorrect price, even after an order confirmation has been sent.</p>
+            <p><strong>Availability:</strong> Inventory is updated in real time, but due to high demand, some items may sell out between the time of adding to cart and checkout. If an item becomes unavailable after your order, we will notify you and offer a full refund or exchange.</p>
+
+            <h2>4. Orders & Payment</h2>
+            <p><strong>Order Confirmation:</strong> After you place an order, you will receive an email acknowledging receipt. This does not constitute acceptance of your order. Order acceptance and formation of a contract occur when we dispatch the shipping confirmation email.</p>
+            <p><strong>Payment Methods:</strong> We accept major credit cards (Visa, Mastercard, Amex), PayPal, and Shop Pay. All payment information is processed securely by third-party PCI-compliant gateways. We do not store full credit card numbers on our servers.</p>
+            <p><strong>Right to Refuse:</strong> We reserve the right to refuse or cancel any order for reasons including but not limited to: product unavailability, payment fraud suspicion, violation of these Terms, or pricing errors.</p>
+
+            <h2>5. Shipping & Delivery</h2>
+            <p>We ship worldwide from our warehouse in the Pacific Northwest. Estimated delivery times are provided at checkout but are not guaranteed. Actual delivery may vary due to carrier delays, customs processing, or inclement weather. Risk of loss and title for purchased items pass to you upon delivery to the carrier. Please see our Shipping Policy (available at checkout) for more details on rates, tracking, and international customs duties (buyer responsible for import fees).</p>
+
+            <h2>6. Returns, Refunds & Exchanges</h2>
+            <p><strong>30-Day Satisfaction Guarantee:</strong> If you are not completely satisfied with your purchase, you may return unused, unwashed, and undamaged items within 30 days of delivery for a full refund to the original payment method. Return shipping costs are the responsibility of the buyer unless the item arrived defective or damaged.</p>
+            <p><strong>Final Sale Items:</strong> Custom or personalized items, perishable goods (candles, food wraps), and discounted clearance products are final sale and cannot be returned.</p>
+            <p><strong>How to Initiate a Return:</strong> Contact hello@harborandhearth.com with your order number and reason for return. Once approved, you will receive instructions. Refunds are processed within 7–10 business days after we receive and inspect the returned item(s).</p>
+            <p><strong>Damaged or Incorrect Items:</strong> If your order arrives damaged or we shipped the wrong product, please notify us within 48 hours of delivery with photos of the damage/box. We will arrange a replacement or full refund at no cost to you.</p>
+
+            <h2>7. Intellectual Property</h2>
+            <p>All content on this Site — including but not limited to text, graphics, logos, product photography, illustrations, and custom illustrations — is the exclusive property of STANCES or our content suppliers and is protected by United States and international copyright laws. You may not reproduce, distribute, modify, or create derivative works without our prior written consent. However, you may share product images via social media with proper credit to STANCES.</p>
+
+            <h2>8. User Accounts & Reviews</h2>
+            <p>If you create an account, you are responsible for maintaining the confidentiality of your password and for all activities under your account. You agree to notify us immediately of any unauthorized use. We reserve the right to terminate accounts that violate these Terms.</p>
+            <p>You may submit product reviews, ratings, or comments as long as the content is not illegal, obscene, abusive, or infringing. By submitting a review, you grant us a perpetual, royalty-free license to use, edit, or display that content on our Site and marketing materials.</p>
+
+            <h2>9. Prohibited Uses</h2>
+            <p>You agree not to use the Site for any unlawful purpose or to:</p>
+            <ul>
+                <li>Violate any applicable local, state, national, or international law.</li>
+                <li>Transmit any malware, viruses, or code of a destructive nature.</li>
+                <li>Attempt to gain unauthorized access to our servers or user data.</li>
+                <li>Harass, abuse, or defraud other users or our employees.</li>
+                <li>Use robots, scrapers, or other automated means to access the Site for competitive purposes.</li>
+            </ul>
+
+            <h2>10. Disclaimer of Warranties</h2>
+            <p>THE SITE AND ALL PRODUCTS ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS. TO THE FULLEST EXTENT PERMITTED BY LAW, STANCES DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE SITE WILL BE UNINTERRUPTED, ERROR-FREE, OR FREE OF VIRUSES.</p>
+
+            <h2>11. Limitation of Liability</h2>
+            <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, STANCES, ITS OWNERS, EMPLOYEES, OR AFFILIATES SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM YOUR USE OF THE SITE OR PURCHASE OF PRODUCTS, INCLUDING LOST PROFITS, EVEN IF ADVISED OF THE POSSIBILITY. OUR TOTAL LIABILITY TO YOU FOR ANY CLAIM RELATED TO A PRODUCT SHALL NOT EXCEED THE AMOUNT YOU PAID FOR THAT PRODUCT.</p>
+            <p>SOME STATES DO NOT ALLOW THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES, SO THE ABOVE LIMITATIONS MAY NOT APPLY TO YOU.</p>
+
+            <h2>12. Indemnification</h2>
+            <p>You agree to indemnify, defend, and hold harmless STANCES and its employees, partners, and suppliers from any claim, demand, loss, liability, or expense (including reasonable attorneys' fees) arising out of your breach of these Terms, violation of any law, or infringement of any third-party rights.</p>
+
+            <h2>13. Governing Law & Dispute Resolution</h2>
+            <p>These Terms and any disputes arising from them shall be governed by the laws of the State of Washington, without regard to conflict of law principles. Any legal action or proceeding relating to these Terms shall be brought exclusively in the state or federal courts located in King County, Washington. You consent to personal jurisdiction in such courts.</p>
+            <p><strong>Informal Resolution:</strong> Before filing a claim, you agree to try to resolve the dispute informally by contacting hello@harborandhearth.com. We will make a good-faith effort to resolve the issue within 30 days.</p>
+
+            <h2>14. Modifications to Terms</h2>
+            <p>We reserve the right to update or modify these Terms at any time without prior notice. Changes become effective immediately upon posting on this page. Your continued use of the Site after any changes constitutes acceptance of the revised Terms. We encourage you to review this page periodically.</p>
+
+            <h2>15. Severability & Entire Agreement</h2>
+            <p>If any provision of these Terms is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary, and the remaining provisions shall remain in full force and effect. These Terms constitute the entire agreement between you and STANCES regarding your use of the Site and supersede any prior agreements.</p>
+
+            <div class="contact-box">
+                📬 Questions about these Terms?<br>
+                Reach out to us at <strong>legal@harborandhearth.com</strong> or call/text +1 (206) 555-8723 (Mon-Fri, 9am–5pm PT)
+            </div>
+
+            <div class="last-updated">
+                📅 Terms & Conditions last revised: June 5, 2026
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>© 2025 STANCES — timeless goods, crafted with integrity.</p>
+        <p style="margin-top: 8px; font-size: 0.75rem;">🌿 Plastic-neutral shipping | Proud member of 1% for the Planet</p>
+    </div>
+</footer>
+
+</body>
+</html>
